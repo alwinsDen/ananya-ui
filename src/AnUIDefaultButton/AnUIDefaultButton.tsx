@@ -2,12 +2,12 @@ import React from "react";
 import "./AnUIDefaultButton.scss";
 
 //define types and interfaces
-interface AnUIDefaultButtonInterface
+export interface AnUIDefaultButtonInterface
   extends React.ButtonHTMLAttributes<HTMLButtonElement> {
   onClick?: () => void;
 }
 
-const AnUIDefaultButton = React.forwardRef<
+export const AnUIDefaultButton = React.forwardRef<
   HTMLButtonElement,
   AnUIDefaultButtonInterface
 >(({ ...props }, ref) => {
@@ -17,5 +17,3 @@ const AnUIDefaultButton = React.forwardRef<
     </button>
   );
 });
-
-export default AnUIDefaultButton;
