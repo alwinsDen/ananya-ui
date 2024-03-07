@@ -24,6 +24,7 @@
     "react": "^18.2.0"
   },
   "publishConfig": {
-    "@alwinsden:registry": "https://registry.npmjs.org"
+    "@alwinsden:registry": "https://registry.npmjs.org",
+    "@alwinsDen:registry": "https://npm.pkg.github.com"
   }
 }
