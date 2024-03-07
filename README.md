@@ -1,4 +1,4 @@
-# ananya-ui
+# Ananya UI
 
 ## Installation and usage
 
@@ -22,4 +22,9 @@ npm install
 ### Create a usable build of the library
 ```shell
 npm run build
+```
+
+### Code reformatting
+```shell
+prettier . --write
 ```
