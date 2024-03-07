@@ -1,5 +1,5 @@
 import React from "react";
-import "./index.scss";
+import "./AnUIDefaultButton.scss";
 
 //define types and interfaces
 interface AnUIDefaultButtonInterface
