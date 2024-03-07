@@ -1,0 +1,19 @@
+@import '../variables';
+.AnUIDefaultButton {
+  background: none;
+  border: none;
+  margin: 0;
+}
+.default {
+  background: #ffffff;
+  border: $anui-grey-border solid .6px;
+  font-size: 1rem;
+  font-weight: 300;
+  border-radius: 5px;
+  padding: .3rem .5rem;
+  box-shadow: 0px 0px 4px $anui-grey-border-light;
+  cursor: pointer;
+  &:active{
+    border-color: $anui-blue;
+  }
+}
