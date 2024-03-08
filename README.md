@@ -1,6 +1,7 @@
 # Ananya UI
 
-**npm registry:** https://www.npmjs.com/package/@alwinsden/ananya-ui
+**NPM registry:** https://www.npmjs.com/package/@alwinsden/ananya-ui
+
 **GitHub:** https://github.com/alwinsDen/ananya-ui
 
 ## Installation and usage
