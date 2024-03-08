@@ -1,19 +1,44 @@
-@import '../variables';
+@import "../variables";
 .AnUIDefaultButton {
   background: none;
   border: none;
   margin: 0;
 }
-.default {
-  background: #ffffff;
-  border: $anui-grey-border solid .6px;
-  font-size: 1rem;
+
+@mixin btn-common-properties {
   font-weight: 300;
-  border-radius: 5px;
-  padding: .3rem .5rem;
-  box-shadow: 0px 0px 4px $anui-grey-border-light;
+  border-radius: 6px;
+  padding: 0.3rem 0.5rem;
   cursor: pointer;
-  &:active{
-    border-color: $anui-blue;
+}
+
+.btn-default {
+  @include btn-common-properties;
+  background: #ffffff;
+  border: $anui-grey-border solid 0.6px;
+  box-shadow: 0px 1px 4px $anui-grey-border-light;
+  &:active {
+    background: $anui-grey-border-light;
+  }
+}
+
+.btn-blue {
+  @include btn-common-properties;
+  background: $anui-blue;
+  border: $anui-grey-border solid 0.6px;
+  box-shadow: 0px 0px 3px $anui-blue-light;
+  color: #ffffff;
+  &:active {
+    background: #3292ff;
+  }
+}
+
+.btn-dark {
+  @include btn-common-properties;
+  background: #949494;
+  color: #ffffff;
+  box-shadow: 0px 0px 3px #000000;
+  &:active {
+    background: #a8a8a8;
   }
 }

@@ -4,15 +4,19 @@ import "./AnUIDefaultButton.scss";
 //define types and interfaces
 export interface AnUIDefaultButtonInterface
   extends React.ButtonHTMLAttributes<HTMLButtonElement> {
-  onClick?: () => void;
+  colorMode?: "blue" | "default" | "dark";
 }
 
 export const AnUIDefaultButton = React.forwardRef<
   HTMLButtonElement,
   AnUIDefaultButtonInterface
->(({ ...props }, ref) => {
+>(({ colorMode = "default", ...props }, ref) => {
   return (
-    <button ref={ref} {...props} className={`AnUIDefaultButton default`}>
+    <button
+      ref={ref}
+      {...props}
+      className={`AnUIDefaultButton btn-${colorMode}`}
+    >
       {props.children}
     </button>
   );
