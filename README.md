@@ -1,5 +1,8 @@
 # Ananya UI
 
+[![npm version](https://img.shields.io/npm/v/redux.svg?style=flat-square)](https://www.npmjs.com/package/@alwinsden/ananya-ui)
+[![npm downloads](https://img.shields.io/npm/dm/redux.svg?style=flat-square)](https://www.npmjs.com/package/@alwinsden/ananya-ui)
+
 **npm registry:** https://www.npmjs.com/package/@alwinsden/ananya-ui
 
 ## Installation and usage
