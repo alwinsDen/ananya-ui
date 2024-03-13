@@ -1,0 +1,52 @@
+.AnUITitledImage {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  min-height: 290px;
+  .imageController {
+    overflow: hidden;
+    display: flex;
+    border-radius: 8px;
+    position: relative;
+    &:hover {
+      cursor: pointer;
+      filter: grayscale(1);
+      transition: filter 0.5s ease;
+    }
+    &:not(:hover) {
+      filter: grayscale(0);
+      transition: filter 0.5s ease;
+    }
+    .labelComponent {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      padding: 10px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: flex-end;
+      gap: 5px;
+      .labelDisplay {
+        background: #d7d7d7;
+        padding: 2px 5px;
+        border-radius: 3px;
+        font-weight: 550;
+      }
+    }
+  }
+  p {
+    font-size: 0.75rem;
+    cursor: pointer;
+  }
+  .imageTitle {
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+  .imageDescription {
+    color: #7c7c7c;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
