@@ -8,15 +8,7 @@
     display: flex;
     border-radius: 8px;
     position: relative;
-    &:hover {
-      cursor: pointer;
-      filter: grayscale(1);
-      transition: filter 0.5s ease;
-    }
-    &:not(:hover) {
-      filter: grayscale(0);
-      transition: filter 0.5s ease;
-    }
+    justify-content: center;
     .labelComponent {
       position: absolute;
       bottom: 0;
@@ -47,6 +39,19 @@
     color: #7c7c7c;
     &:hover {
       text-decoration: underline;
+    }
+  }
+  &:hover {
+    .imageController {
+      cursor: pointer;
+      filter: grayscale(1);
+      transition: filter 0.5s ease;
+    }
+  }
+  &:not(:hover) {
+    .imageController {
+      filter: grayscale(0);
+      transition: filter 0.5s ease;
     }
   }
 }

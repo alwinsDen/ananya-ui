@@ -29,7 +29,6 @@ export const AnUITitledImage = React.forwardRef<
     //check the URLs validity with a pseudo image loader
     const [isImageValid, setIsImageValid] = useState(false);
 
-    //calling UseEffect to verify image source validity
     useEffect(() => {
       const imageInstance = new Image();
       imageInstance.src = imageSrc;
@@ -54,7 +53,7 @@ export const AnUITitledImage = React.forwardRef<
           }}
         >
           {imageSrc && isImageValid && (
-            <img src={imageSrc} alt={"imageTag"} width={width} />
+            <img src={imageSrc} alt={"imageTag"} height={width} />
           )}
           <div className={"labelComponent"}>
             {labellingList.length !== 0 &&
