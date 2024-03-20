@@ -25,7 +25,7 @@
 .btn-blue {
   @include btn-common-properties;
   background: $anui-blue;
-  border: $anui-grey-border solid 0.6px;
+  border: none;
   box-shadow: 0px 0px 3px $anui-blue-light;
   color: #ffffff;
   &:active {
